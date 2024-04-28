@@ -1,0 +1,97 @@
+@if((quizId && quizName) || !quizId) {
+<mat-card>
+  <mat-card-content>
+    <h1 class="text-centered">{{ quizId ? "Edit Quiz" : "Create Quiz" }}</h1>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Quiz Name</mat-label>
+      <input matInput [(ngModel)]="quizName" required />
+    </mat-form-field>
+
+    <mat-tab-group
+      [selectedIndex]="activeTab"
+      (selectedIndexChange)="handleTabChange(tabs[$event])"
+      animationDuration="0ms"
+    >
+      <mat-tab label="New Question">
+        <div class="pv-20">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Question</mat-label>
+            <input matInput [(ngModel)]="currentQuestion" />
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Answer</mat-label>
+            <input matInput [(ngModel)]="currentAnswer" />
+          </mat-form-field>
+
+          <button
+            mat-flat-button
+            color="primary"
+            class="full-width"
+            (click)="addNewQuestion()"
+            [disabled]="!currentQuestion || !currentAnswer"
+          >
+            Add New Question
+          </button>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Existing Questions">
+        <div class="pv-20">
+          <mat-form-field appearance="outline" class="full-width">
+            <mat-label>Select Existing Questions</mat-label>
+            <mat-select [(ngModel)]="selectedQuestions" multiple>
+              @for(question of unselectedQuestions(); track question.id) {
+              <mat-option [value]="question">
+                {{ question.question }}
+              </mat-option>
+              }
+            </mat-select>
+          </mat-form-field>
+
+          <button
+            mat-flat-button
+            color="primary"
+            class="full-width"
+            (click)="addSelectedQuestions()"
+            [disabled]="selectedQuestions().length === 0"
+          >
+            Add Selected Questions
+          </button>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+
+    <div class="mt-20">
+      <h2 class="mb-0">Questions in this Quiz:</h2>
+      <mat-list>
+        @for(question of quizQuestions(); track question.id) {
+        <mat-list-item>
+          {{ question.question }}
+          <button
+            mat-icon-button
+            class="small-icon-button"
+            (click)="removeQuestion(question)"
+          >
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-list-item>
+        }
+      </mat-list>
+    </div>
+
+    <button
+      mat-flat-button
+      class="full-width"
+      color="primary"
+      (click)="submitQuiz()"
+      [disabled]="!quizName || quizQuestions.length === 0"
+    >
+      {{ quizId ? "Update Quiz" : "Create Quiz" }}
+    </button>
+  </mat-card-content>
+</mat-card>
+}@else {
+<h1>Quiz not found</h1>
+}

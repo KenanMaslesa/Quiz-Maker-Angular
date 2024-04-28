@@ -1,0 +1,46 @@
+@if(quizDetails) {
+<h1 class="title">{{ quizDetails.name }}</h1>
+<mat-card>
+  <mat-card-content>
+    <div class="quiz-container">
+      <div class="quiz-question">
+        <h2>{{ currentQuestion.question }}</h2>
+      </div>
+
+      <div class="quiz-answer">
+        <p [style.filter]="showAnswer ? 'none' : 'blur(8px)'">
+          {{ currentQuestion.answer }}
+        </p>
+
+        @if(!showAnswer) {
+        <mat-icon class="show-answer-button" (click)="handleShowAnswer()"
+          >visibility</mat-icon
+        >
+        }
+      </div>
+
+      <div class="quiz-navigation">
+        <button
+          mat-icon-button
+          (click)="handlePrevious()"
+          [disabled]="currentQuestionIndex === 0"
+        >
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+
+        {{ currentQuestionIndex + 1 }} / {{ quizDetails.questions.length }}
+
+        <button
+          mat-icon-button
+          (click)="handleNext()"
+          [disabled]="currentQuestionIndex === quizDetails.questions.length - 1"
+        >
+          <mat-icon>arrow_forward</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>
+}@else {
+<h1>Quiz not found</h1>
+}

@@ -1,0 +1,25 @@
+mat-card {
+    max-width: 500px;
+    width: 500px;
+    padding: 15px 0px;
+
+    @media (max-width: 600px) {
+        width: auto;
+    }
+
+    .mat-mdc-row {
+        transition: all .3s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #f0f0f0;
+        }
+
+        td {
+            &:last-child {
+                padding: 0;
+                min-width: 100px
+            }
+        }
+    }
+}

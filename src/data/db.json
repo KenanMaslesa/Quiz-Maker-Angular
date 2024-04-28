@@ -1,0 +1,168 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "name": "Angular Basics",
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is Angular?",
+          "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+        },
+        {
+          "id": 2,
+          "question": "What are Angular components?",
+          "answer": "Angular components are the building blocks of Angular applications. They are responsible for displaying the UI and managing data, and they consist of a class, a template, and associated styles."
+        },
+        {
+          "id": 3,
+          "question": "What is data binding in Angular?",
+          "answer": "Data binding in Angular is a way to synchronize data between the model and the view. Angular supports various types of data binding, including interpolation, property binding, event binding, and two-way binding."
+        },
+        {
+          "id": 4,
+          "question": "What are Angular directives?",
+          "answer": "Angular directives are instructions or markers in the DOM that tell Angular to perform specific behavior. There are three types of directives: component directives, structural directives (like `ngIf`), and attribute directives (like `ngClass`)."
+        },
+        {
+          "id": 5,
+          "question": "What is Angular dependency injection?",
+          "answer": "Dependency injection in Angular is a design pattern where a class receives its dependencies from an external source rather than creating them. Angular has a built-in dependency injection system, allowing you to inject services into components, directives, and other services."
+        },
+        {
+          "id": 6,
+          "question": "What is Angular routing?",
+          "answer": "Angular routing allows you to define routes for navigation within your application. It lets you map URLs to components, manage nested routes, and implement features like guards and resolvers."
+        },
+        {
+          "id": 7,
+          "question": "What is Angular lifecycle hooks?",
+          "answer": "Angular lifecycle hooks are special methods that are called at specific stages of a component's lifecycle. They include hooks like `ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, and more, allowing you to perform actions at different phases of the component's existence."
+        },
+        {
+          "id": 8,
+          "question": "What is Angular Services?",
+          "answer": "Angular services are singleton classes that provide reusable functionality across the application. They are commonly used for business logic, data management, and sharing information across components."
+        },
+        {
+          "id": 9,
+          "question": "What is Angular HttpClient?",
+          "answer": "Angular HttpClient is a service that provides an interface for making HTTP requests. It is used to communicate with external APIs and servers, allowing you to fetch, send, or manipulate data."
+        },
+        {
+          "id": 10,
+          "question": "What is the Angular CLI?",
+          "answer": "The Angular CLI is a command-line interface that allows you to create, build, test, and manage Angular applications. It provides various commands for generating components, services, modules, and other Angular artifacts."
+        }
+      ]
+    },
+    {
+      "id": 1714334703038,
+      "name": "Keno Test Quiz",
+      "questions": [
+        {
+          "id": 1714334656397,
+          "question": "Custom Question",
+          "answer": "Answer"
+        },
+        {
+          "id": 1714334656397,
+          "question": "Custom Question",
+          "answer": "Answer"
+        },
+        {
+          "id": "1",
+          "question": "What is Angular?",
+          "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+        },
+        {
+          "id": "2",
+          "question": "What are Angular components?",
+          "answer": "Angular components are the building blocks of Angular applications. They are responsible for displaying the UI and managing data, and they consist of a class, a template, and associated styles."
+        },
+        {
+          "id": 1714334656397,
+          "question": "Custom Question",
+          "answer": "Answer"
+        },
+        {
+          "id": 1714334656397,
+          "question": "Custom Question",
+          "answer": "Answer"
+        },
+        {
+          "id": "1",
+          "question": "What is Angular?",
+          "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+        },
+        {
+          "id": "2",
+          "question": "What are Angular components?",
+          "answer": "Angular components are the building blocks of Angular applications. They are responsible for displaying the UI and managing data, and they consist of a class, a template, and associated styles."
+        },
+        {
+          "id": "1",
+          "question": "What is Angular?",
+          "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+        },
+        {
+          "id": "3",
+          "question": "What is data binding in Angular?",
+          "answer": "Data binding in Angular is a way to synchronize data between the model and the view. Angular supports various types of data binding, including interpolation, property binding, event binding, and two-way binding."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "1",
+      "question": "What is Angular?",
+      "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+    },
+    {
+      "id": "2",
+      "question": "What are Angular components?",
+      "answer": "Angular components are the building blocks of Angular applications. They are responsible for displaying the UI and managing data, and they consist of a class, a template, and associated styles."
+    },
+    {
+      "id": "3",
+      "question": "What is data binding in Angular?",
+      "answer": "Data binding in Angular is a way to synchronize data between the model and the view. Angular supports various types of data binding, including interpolation, property binding, event binding, and two-way binding."
+    },
+    {
+      "id": "4",
+      "question": "What are Angular directives?",
+      "answer": "Angular directives are instructions or markers in the DOM that tell Angular to perform specific behavior. There are three types of directives: component directives, structural directives (like `ngIf`), and attribute directives (like `ngClass`)."
+    },
+    {
+      "id": "5",
+      "question": "What is Angular dependency injection?",
+      "answer": "Dependency injection in Angular is a design pattern where a class receives its dependencies from an external source rather than creating them. Angular has a built-in dependency injection system, allowing you to inject services into components, directives, and other services."
+    },
+    {
+      "id": "6",
+      "question": "What is Angular routing?",
+      "answer": "Angular routing allows you to define routes for navigation within your application. It lets you map URLs to components, manage nested routes, and implement features like guards and resolvers."
+    },
+    {
+      "id": "7",
+      "question": "What is Angular lifecycle hooks?",
+      "answer": "Angular lifecycle hooks are special methods that are called at specific stages of a component's lifecycle. They include hooks like `ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, and more, allowing you to perform actions at different phases of the component's existence."
+    },
+    {
+      "id": "8",
+      "question": "What is Angular Services?",
+      "answer": "Angular services are singleton classes that provide reusable functionality across the application. They are commonly used for business logic, data management, and sharing information across components."
+    },
+    {
+      "id": "9",
+      "question": "What is Angular HttpClient?",
+      "answer": "Angular HttpClient is a service that provides an interface for making HTTP requests. It is used to communicate with external APIs and servers, allowing you to fetch, send, or manipulate data."
+    },
+    {
+      "id": "10",
+      "question": "What is the Angular CLI?",
+      "answer": "The Angular CLI is a command-line interface that allows you to create, build, test, and manage Angular applications. It provides various commands for generating components, services, modules, and other Angular artifacts."
+    }
+  ]
+}
