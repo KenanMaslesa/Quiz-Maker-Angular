@@ -86,7 +86,7 @@
       class="full-width"
       color="primary"
       (click)="submitQuiz()"
-      [disabled]="!quizName || quizQuestions.length === 0"
+      [disabled]="!quizName || quizQuestions().length === 0"
     >
       {{ quizId ? "Update Quiz" : "Create Quiz" }}
     </button>

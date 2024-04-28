@@ -57,7 +57,7 @@
       ]
     },
     {
-      "id": 1714334703038,
+      "id": "1714334703038",
       "name": "Keno Test Quiz",
       "questions": [
         {
@@ -109,6 +109,42 @@
           "id": "3",
           "question": "What is data binding in Angular?",
           "answer": "Data binding in Angular is a way to synchronize data between the model and the view. Angular supports various types of data binding, including interpolation, property binding, event binding, and two-way binding."
+        }
+      ]
+    },
+    {
+      "id": 1714342227636,
+      "name": "Angular Quiz",
+      "questions": [
+        {
+          "id": "1",
+          "question": "What is Angular?",
+          "answer": "Angular is a platform and framework for building single-page client applications using HTML and TypeScript. It is developed and maintained by Google."
+        },
+        {
+          "id": "2",
+          "question": "What are Angular components?",
+          "answer": "Angular components are the building blocks of Angular applications. They are responsible for displaying the UI and managing data, and they consist of a class, a template, and associated styles."
+        },
+        {
+          "id": "3",
+          "question": "What is data binding in Angular?",
+          "answer": "Data binding in Angular is a way to synchronize data between the model and the view. Angular supports various types of data binding, including interpolation, property binding, event binding, and two-way binding."
+        },
+        {
+          "id": "4",
+          "question": "What are Angular directives?",
+          "answer": "Angular directives are instructions or markers in the DOM that tell Angular to perform specific behavior. There are three types of directives: component directives, structural directives (like `ngIf`), and attribute directives (like `ngClass`)."
+        },
+        {
+          "id": "5",
+          "question": "What is Angular dependency injection?",
+          "answer": "Dependency injection in Angular is a design pattern where a class receives its dependencies from an external source rather than creating them. Angular has a built-in dependency injection system, allowing you to inject services into components, directives, and other services."
+        },
+        {
+          "id": "6",
+          "question": "What is Angular routing?",
+          "answer": "Angular routing allows you to define routes for navigation within your application. It lets you map URLs to components, manage nested routes, and implement features like guards and resolvers."
         }
       ]
     }
